@@ -219,6 +219,7 @@ body {
 .item-design {
   display: flex;
   flex-direction: column;
+  color: #14203E;
 }
 .item-design__img {
   max-width: 100%;
