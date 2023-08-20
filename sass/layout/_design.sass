@@ -1,0 +1,55 @@
+.design
+   padding: 0 3rem 3rem
+   color: $colorBlue
+
+   &__title
+      text-align: center
+      padding: 3rem 0
+      font-weight: 600
+      position: relative
+      &::before
+         content: ""
+         display: inline-block
+         width: 200px
+         height: 1px
+         background: rgba(20, 32, 62, 0.20)
+         position: absolute
+         top: 50%
+         left: 25%
+
+      &::after
+         content: ""
+         display: inline-block
+         width: 200px
+         height: 1px
+         background: rgba(20, 32, 62, 0.20)
+         position: absolute
+         top: 50%
+         right: 25%
+
+   &__row
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      gap: 3rem
+
+   &__column
+      display: inline-block
+      flex: 0 0 calc(25% - 3rem)
+      display: flex
+
+.item-design
+   display: flex
+   flex-direction: column
+
+   &__img
+      max-width: 100%
+
+   &__title
+      flex: 1 1 auto
+      font-size: 2.2rem
+      font-weight: 700
+      line-height: 109%
+
+   &__date
+      flex: 0 0 auto
