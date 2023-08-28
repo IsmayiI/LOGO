@@ -31,6 +31,11 @@ aside {
 html {
   font-size: 62.5%;
 }
+@media (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
 
 html,
 body {
@@ -102,6 +107,7 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
+  padding: 0 3rem;
 }
 
 .header {
@@ -111,13 +117,31 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10rem;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+@media (max-width: 767px) {
+  .header__row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 992px) {
+  .header__column_center {
+    flex: 1 1 100%;
+    text-align: center;
+    justify-content: center;
+  }
 }
 .header__logo {
   color: #C7C9D1;
   font-size: 2.2rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .header__menu {
+    display: none;
+  }
 }
 .header__list {
   display: flex;
@@ -143,7 +167,6 @@ body {
   color: #FFF;
   background-color: #14203E;
 }
-
 .start {
   padding: 13rem 0;
   background: #FFFCF8;
@@ -211,9 +234,18 @@ body {
   gap: 3rem;
 }
 .design__column {
-  display: inline-block;
   flex: 0 0 calc(25% - 3rem);
   display: flex;
+}
+@media (max-width: 992px) {
+  .design__column {
+    flex: 0 0 calc(50% - 3rem);
+  }
+}
+@media (max-width: 767px) {
+  .design__column {
+    flex: 1 1 100%;
+  }
 }
 
 .item-design {

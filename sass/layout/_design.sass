@@ -34,9 +34,12 @@
       gap: 3rem
 
    &__column
-      display: inline-block
       flex: 0 0 calc(25% - 3rem)
       display: flex
+      @media (max-width: 992px)
+         flex: 0 0 calc(50% - 3rem)
+      @media (max-width: 767px)
+         flex: 1 1 100%
 
 .item-design
    display: flex
@@ -54,3 +57,5 @@
 
    &__date
       flex: 0 0 auto
+      justify-content: space-around
+      align-items: end

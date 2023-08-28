@@ -5,9 +5,17 @@
       display: flex
       justify-content: space-between
       align-items: center
-      gap: 10rem
+      flex-wrap: wrap
+      gap: 4rem
+      @media (max-width: 767px)
+         flex-direction: column
 
    &__column
+      &_center
+         @media (max-width: 992px)
+            flex: 1 1 100%
+            text-align: center
+            justify-content: center
 
    &__logo
       color: #C7C9D1
@@ -16,6 +24,8 @@
       text-transform: uppercase
 
    &__menu
+      @media (max-width: 767px)
+         display: none
 
    &__list
       display: flex
@@ -39,3 +49,6 @@
    &__btn_blue
       color: $colorWhite
       background-color: #14203E
+
+   @media (max-width: 992px)
+   @media (max-width: 767px)
